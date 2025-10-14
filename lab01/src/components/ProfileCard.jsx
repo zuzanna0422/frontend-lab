@@ -1,14 +1,29 @@
-import ProfileParagraph from "./ProfileParagraph"; 
-function ProfileCard(profile) {
-    return(
-        <div className="Container">
-            <h2 style={{ marginTop: 0, color: "#333" }}>Profil użytkownika</h2>
+import ProfileParagraph from "./ProfileParagraph";
 
-            <ProfileParagraph label="Imię" title={profile.name}/>
-            <ProfileParagraph label="Email" title={profile.email}/>
-            <ProfileParagraph label="Data urodzenia" title={profile.birthDate}/>
-            <ProfileParagraph label="Telefon" title={profile.phone}/>
+function ProfileCard({ name, email, birthDate, phone }) {
+  return (
+    <div className="container mt-4">
+      <div className="card shadow-sm p-4">
+        <h2 className="text-center mb-4 text-primary">Profil użytkownika</h2>
+
+        <div className="mb-3">
+          <ProfileParagraph label="Imię" title={name} />
         </div>
-    );
+
+        <div className="mb-3">
+          <ProfileParagraph label="Email" title={email} />
+        </div>
+
+        <div className="mb-3">
+          <ProfileParagraph label="Data urodzenia" title={birthDate} />
+        </div>
+
+        <div className="mb-3">
+          <ProfileParagraph label="Telefon" title={phone} />
+        </div>
+      </div>
+    </div>
+  );
 }
+
 export default ProfileCard;

@@ -1,37 +1,37 @@
 export const people = [
     {
         "id": 1,
-        "name": "Wiktoria",
-        "birthDate": "2009-12-27",
-        "email": "wiktoria1@wsei.edu.pl",
-        "phone": "266-695-571"
+        "name": "Zuzia",
+        "birthDate": "2005-03-27",
+        "email": "zuzia1@wsei.edu.pl",
+        "phone": "260-818-725"
     },
     {
         "id": 2,
-        "name": "Zuzia",
-        "birthDate": "2003-03-02",
-        "email": "zuzia1@wsei.edu.pl",
-        "phone": "238-039-757"
+        "name": "Ania",
+        "birthDate": "1987-05-25",
+        "email": "ania1@wsei.edu.pl",
+        "phone": "202-948-490"
     },
     {
         "id": 3,
-        "name": "Kasia",
-        "birthDate": "1996-06-07",
-        "email": "kasia1@wsei.edu.pl",
-        "phone": "210-311-075"
+        "name": "Ania",
+        "birthDate": "2000-01-27",
+        "email": "ania2@wsei.edu.pl",
+        "phone": "295-348-112"
     },
     {
         "id": 4,
-        "name": "Zuzia",
-        "birthDate": "1994-02-26",
-        "email": "zuzia2@wsei.edu.pl",
-        "phone": "295-194-017"
+        "name": "Ala",
+        "birthDate": "1981-09-09",
+        "email": "ala1@wsei.edu.pl",
+        "phone": "282-191-376"
     },
     {
         "id": 5,
-        "name": "Zuzia",
-        "birthDate": "2007-06-24",
-        "email": "zuzia3@wsei.edu.pl",
-        "phone": "259-813-027"
+        "name": "Wiktoria",
+        "birthDate": "1985-01-05",
+        "email": "wiktoria1@wsei.edu.pl",
+        "phone": "206-036-771"
     }
 ];
