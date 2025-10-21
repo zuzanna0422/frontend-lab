@@ -4,16 +4,18 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "generate-data": "node src/scripts/module-data-generator.cjs 5",
+    "generate-data": "node src/data/module-data-generator.cjs 5",
     "dev": "npm run generate-data && vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
-    "bootstrap": "^4.1.2",
+    "bootstrap": "^4.6.2",
     "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react-bootstrap": "^2.10.10",
+    "react-dom": "^19.1.1",
+    "react-router-dom": "^6.30.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
