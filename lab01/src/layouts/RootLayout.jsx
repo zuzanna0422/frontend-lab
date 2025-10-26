@@ -1,13 +1,14 @@
 import NavBarMenuApp from "../components/NavBarMenuApp";
 import FooterApp from "../components/FooterApp";
+import { Outlet} from 'react-router-dom'; 
 
-function RootLayout({ children }) {
+function RootLayout() {
   return (
     <div className="d-flex flex-column min-vh-100">
       <NavBarMenuApp />
 
       <main className="container py-4 flex-fill">
-        {children}
+        <Outlet />
       </main>
 
       <FooterApp />

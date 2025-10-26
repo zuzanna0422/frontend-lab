@@ -37,6 +37,61 @@
   padding: 2em;
 }
 
+.person-card {
+  max-width: 20rem;
+  margin: 0.5rem auto;
+  display: flex;
+  flex-direction: column;
+}
+.person-card .person-name {
+  color: #0d6efd;
+  font-size: 1.4rem;
+  margin: 0;
+}
+.person-card .person-card-body .mb-2 p {
+  margin: 0.25rem 0 0.5rem 0;
+  font-size: 0.98rem;
+}
+.person-card .person-card-body strong {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+.rating-wrapper {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+.rating-wrapper span {
+  font-size: 1.1rem;
+  margin-right: 4px;
+}
+.person-card-actions .form-check {
+  margin-bottom: 0;
+}
+
+.person-card-header {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+.person-check-wrapper {
+  position: absolute;
+  left: 0.75rem;
+  top: 0.5rem;
+}
+.rating-row .rating-left {
+  flex: 1 1 auto;
+  text-align: left;
+}
+.rating-row .rating-right {
+  flex: 0 0 auto;
+}
+.person-card-actions .left-action {
+  text-align: left;
+}
+.person-card-actions .right-action {
+  text-align: right;
+}
+
 .read-the-docs {
   color: #888;
 }
