@@ -2,28 +2,27 @@ import React from 'react'
 import ProfileParagraph from './ProfileParagraph'
 import { Button, Form } from 'react-bootstrap'
 import RatingBar from './RatingBar'
+import { useNavigate } from 'react-router-dom'
+import useDispatch from '../hooks/useDispatch'
 
-function PersonProfile({ id, name, email, birthDate, phone, rating = 0, check = false, dispatch }) {
+function PersonProfile({ id, name, email, birthDate, phone, rating = 0, check = false }) {
+  const navigate = useNavigate()
+  const dispatch = useDispatch()
+
   const handleEdit = () => {
-    console.log('Edit clicked for', id)
+    if (id != null) navigate(`/lab04/edit/${id}`)
   }
 
   const handleCheck = () => {
-    if (typeof dispatch === 'function') {
-      dispatch({ type: 'check', id })
-    }
+    dispatch({ type: 'check', id })
   }
 
   const handleDelete = () => {
-    if (typeof dispatch === 'function') {
-      dispatch({ type: 'delete', id })
-    }
+    dispatch({ type: 'delete', id })
   }
 
   const handleRate = () => {
-    if (typeof dispatch === 'function') {
-      dispatch({ type: 'rate', id })
-    }
+    dispatch({ type: 'rate', id })
   }
 
   return (
@@ -65,17 +64,17 @@ function PersonProfile({ id, name, email, birthDate, phone, rating = 0, check = 
             <RatingBar rate={rating} />
           </div>
           <div className="rating-right ms-2">
-            <Button variant="outline-success" size="sm" onClick={handleRate}>Rate</Button>
+            <Button variant="outline-success" size="sm" onClick={handleRate}>Oceń</Button>
           </div>
         </div>
       </div>
 
       <div className="person-card-actions mt-3 d-flex justify-content-between align-items-center">
         <div className="left-action">
-          <Button variant="outline-primary" size="sm" onClick={handleEdit}>Edit</Button>
+          <Button variant="outline-primary" size="sm" onClick={handleEdit}>Edytuj</Button>
         </div>
         <div className="right-action">
-          <Button variant="outline-danger" size="sm" onClick={handleDelete}>Delete</Button>
+          <Button variant="outline-danger" size="sm" onClick={handleDelete}>Usuń</Button>
         </div>
       </div>
     </div>

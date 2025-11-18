@@ -7,7 +7,7 @@ return (
 <span className="text-muted">© {new Date().getFullYear()} WSEI</span>
 </div>
 <div className="text-muted">
-Autor: <a href="mailto:twoj.email@wsei.edu.pl">twoj.email@wsei.edu.pl</a>
+Autor: <a href="mailto:zuzia.cholewa@gmail.com">zuzia.cholewa@gmail.com</a>
 </div>
 </div>
 </footer>

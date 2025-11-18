@@ -1,5 +1,11 @@
 export default function AppReducer(state, action) {
   switch (action.type) {
+    case 'ADD_ITEM':
+      return [...state, action.payload]
+
+    case 'UPDATE_ITEM':
+      return state.map((p) => (p.id === action.payload.id ? action.payload : p))
+
     case 'check':
       return state.map((p) => {
         if (p.id !== action.id) return p
